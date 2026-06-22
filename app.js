@@ -172,7 +172,7 @@ function initCursorGlow() {
    ============================================================ */
 function initScrollAnimations() {
   const els = document.querySelectorAll(
-    '.animate-fade-up, .animate-scale-up, .animate-slide-left, .animate-slide-right, .animate-reveal-clip, .animate-blur-in, .animate-heading-reveal, .animate-shutter, .animate-depth-pop'
+    '.animate-fade-up, .animate-scale-up, .animate-slide-left, .animate-slide-right, .animate-reveal-clip, .animate-blur-in, .animate-heading-reveal, .animate-shutter, .animate-depth-pop, .animate-approach-row'
   );
   if (!els.length) return;
 
