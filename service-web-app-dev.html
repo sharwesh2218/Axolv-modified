@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Best Practices -->
+  <title>Web &amp; App Development | Axolv AI Automation</title>
+  <meta name="description" content="Custom-coded high-performance websites, scalable web applications, and premium mobile app development.">
+  <meta name="author" content="Axolv">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Google Search Favicon Guidelines & Cross-Browser Icons -->
+  <link rel="shortcut icon" href="favicon-48x48.png" type="image/png">
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="favicon-48x48.png" sizes="48x48">
+  <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="favicon-128x128.png" sizes="128x128">
+  <link rel="icon" type="image/png" href="favicon.png" sizes="192x192">
+  <link rel="apple-touch-icon" href="favicon.png">
+
+  <!-- Font Imports -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;700&family=Outfit:wght@500;700&family=Syne:wght@500;700;800&family=Sora:wght@500;700;800&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap">
+
+  <!-- Styling -->
+  <link rel="stylesheet" href="style.css?v=139">
+</head>
+<body>
+
+  <!-- ===== PRELOADER ===== -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-logo">
+        <img src="logo.png" alt="Axolv Logo">
+      </div>
+      <span class="preloader-text">Axolv</span>
+    </div>
+  </div>
+
+  <!-- ===== AMBIENT BACKGROUND LAYER ===== -->
+  <div class="bg-ambient-layer">
+    <div class="ambient-glow-blob blob-1"></div>
+    <div class="ambient-glow-blob blob-2"></div>
+  </div>
+
+  <!-- ===== 1. FLOATING NAVIGATION BAR ===== -->
+  <header class="site-header">
+    <div class="container">
+      <div class="nav-glass-wrapper">
+        <a href="index.html#hero" class="logo-link" id="navLogo">
+          <div class="logo-3d-wrap">
+            <img src="logo.png" alt="Axolv Logo">
+          </div>
+          <span>Axolv<span class="logo-dot">.</span></span>
+        </a>
+        
+        <nav>
+          <ul class="nav-links" id="navMenu">
+            <li><a href="index.html#hero">Home</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#approach">Roadmap</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#faq">FAQ</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li class="mobile-cta-li"><a href="https://calendly.com/hello-axolv/30min" target="_blank" class="mobile-nav-cta">Get Free Consultation</a></li>
+          </ul>
+        </nav>
+        
+        <a href="https://calendly.com/hello-axolv/30min" target="_blank" class="nav-cta-btn" id="headerCta">
+          <span>Get Free Consultation</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+        
+        <button class="mobile-nav-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== 2. HERO SECTION ===== -->
+  <section class="service-details-hero">
+    <div class="container">
+      <div class="service-details-badge">
+        <svg width="6" height="6" viewBox="0 0 24 24" fill="currentColor" style="color:var(--accent-dark);"><circle cx="12" cy="12" r="10"/></svg>
+        <span>Bespoke Engineering</span>
+      </div>
+      <h1 class="service-details-title">Web &amp; App Development</h1>
+      <p class="service-simplified-tagline">Custom websites, high-performance web apps, and native mobile apps. We design and build tailor-made digital experiences that load instantly, look stunning, and scale seamlessly.</p>
+      <a href="https://calendly.com/hello-axolv/30min" target="_blank" class="btn btn-primary">Request a Custom Estimate</a>
+    </div>
+  </section>
+
+  <!-- ===== 3. DETAILS GRID SECTION ===== -->
+  <section class="service-details-content-section">
+    <div class="container">
+      
+      <!-- Before vs After Section -->
+      <h3 class="details-section-title">Why You Need This</h3>
+      <div class="before-after-grid">
+        <!-- Before -->
+        <div class="ba-card ba-bad">
+          <div class="ba-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="vertical-align: middle;"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            Without Custom Dev
+          </div>
+          <ul class="ba-list">
+            <li>Using generic website templates that load slowly, hurt SEO, and frustrate visitors.</li>
+            <li>Relying on expensive plugin subscriptions that create code bloat and security holes.</li>
+            <li>Clunky mobile layouts that make it hard for customers to engage, dropping conversions.</li>
+            <li>Outdated software systems that cannot integrate with your CRM, databases, or APIs.</li>
+          </ul>
+        </div>
+        <!-- After -->
+        <div class="ba-card ba-good">
+          <div class="ba-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="vertical-align: middle;"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            With Custom Dev
+          </div>
+          <ul class="ba-list">
+            <li>Custom-coded, lightweight web platforms that load in under 1 second, boosting conversions.</li>
+            <li>Bespoke features engineered natively with zero dependencies and no unnecessary plugins.</li>
+            <li>Premium, fully responsive mobile designs optimized for all screens and operating systems.</li>
+            <li>Clean, scalable modern architectures built to grow alongside your business.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Real-World Examples Section -->
+      <h3 class="details-section-title">What It Actually Does</h3>
+      <div class="use-case-cards">
+        <!-- Case 1 -->
+        <div class="use-case-card">
+          <h4>1. Custom SaaS Platforms</h4>
+          <p><strong>Scenario:</strong> You need a secure, multi-user web portal to manage client onboarding and operations.<br><strong>Result:</strong> We build a fast, custom dashboard that automates your workflow and secures client data.</p>
+        </div>
+        <!-- Case 2 -->
+        <div class="use-case-card">
+          <h4>2. Premium E-Commerce</h4>
+          <p><strong>Scenario:</strong> Your online storefront is slow, leading to cart abandonment.<br><strong>Result:</strong> We build a custom e-commerce engine that loads instantly, handles traffic spikes, and boosts conversions.</p>
+        </div>
+        <!-- Case 3 -->
+        <div class="use-case-card">
+          <h4>3. Native Mobile Applications</h4>
+          <p><strong>Scenario:</strong> Customers want to access your services on their phones.<br><strong>Result:</strong> We develop custom iOS and Android apps with offline support and real-time push notifications.</p>
+        </div>
+      </div>
+
+      <!-- Visual Element -->
+      <div class="service-visual-container">
+        <div class="widget-dev-screen" style="max-width: 100%;">
+          <div class="dev-header">
+            <span class="dev-dot red"></span>
+            <span class="dev-dot yellow"></span>
+            <span class="dev-dot green"></span>
+            <span class="dev-title">axolv_app_deploy.sh</span>
+          </div>
+          <div class="dev-workspace" style="height: 120px;">
+            <div class="dev-wireframe">
+              <div class="wf-element header" style="height: 18px;"></div>
+              <div class="wf-row">
+                <div class="wf-element sidebar"></div>
+                <div class="wf-element content-area" style="padding: 10px;">
+                  <div class="wf-line" style="height: 5px;"></div>
+                  <div class="wf-line" style="height: 5px; width: 85%;"></div>
+                  <div class="wf-line accent-line" style="height: 5px;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Persuasion CTA -->
+      <div class="bottom-persuasion-cta">
+        <div class="cta-content-wrap">
+          <h2>Ready to build your custom platform?</h2>
+          <p>Book a free 30-minute operational diagnostic audit. Pradeep and Hari's engineering team will build you a step-by-step roadmap to automate your operations.</p>
+        </div>
+        <a href="https://calendly.com/hello-axolv/30min" target="_blank" class="btn btn-primary">Book Your Free Audit</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== 11. FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3 class="logo-link">
+            <div class="logo-3d-wrap">
+              <img src="logo-footer.png" alt="Axolv Logo">
+            </div>
+            <span>Axolv<span class="logo-dot">.</span></span>
+          </h3>
+          <p>Building cognitive infrastructure to eliminate business friction and scale operations.</p>
+        </div>
+        
+        <div class="footer-links-wrap" style="grid-column: 2;">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="service-agents.html">AI Agents</a></li>
+            <li><a href="service-automation.html">Workflow Integration</a></li>
+            <li><a href="service-ai-iot.html">AI X IoT Solutions</a></li>
+            <li><a href="service-web-app-dev.html">Web &amp; App Development</a></li>
+            <li><a href="service-ai-consulting.html">Operational Consulting</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links-wrap" style="grid-column: 3;">
+          <h4>Connect With Us</h4>
+          <ul>
+            <li>
+              <a href="https://www.linkedin.com/company/axolv/" target="_blank" class="footer-social-link-item">
+                <span class="footer-social-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="display: inline-block; vertical-align: middle;"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg></span>
+                LinkedIn
+              </a>
+            </li>
+            <li>
+              <a href="https://x.com/axolv_in" target="_blank" class="footer-social-link-item">
+                <span class="footer-social-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="display: inline-block; vertical-align: middle;"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></span>
+                Twitter / X
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/axolv.in?igsh=MXQ5c20zcXd6NGp0Ng==" target="_blank" class="footer-social-link-item">
+                <span class="footer-social-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="display: inline-block; vertical-align: middle;"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg></span>
+                Instagram
+              </a>
+            </li>
+            <li>
+              <a href="mailto:hello@axolv.in" class="footer-social-link-item">
+                <span class="footer-social-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="display: inline-block; vertical-align: middle;"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg></span>
+                hello@axolv.in
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <div class="copyright-text">
+          &copy; 2026 Axolv. All rights reserved. Designed for non-technical business scale.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Logic Controller -->
+  <script src="app.js?v=139"></script>
+</body>
+</html>
