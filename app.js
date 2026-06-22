@@ -1320,4 +1320,66 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+// Approach Modal Pop-up Logic
+document.addEventListener('DOMContentLoaded', () => {
+  const approachRows = document.querySelectorAll('.approach-flow-row');
+  const approachModal = document.getElementById('approachModal');
+  const closeApproachModal = document.getElementById('closeApproachModal');
+  const modalTitle = document.getElementById('approachModalTitle');
+  const modalBody = document.getElementById('approachModalBody');
+
+  const stepDetails = {
+    "1": {
+      title: "Phase 01: Discover",
+      body: "We start by digging deep into your business operations. Our systems engineers analyze your current manual workflows, identify repetitive bottlenecks, and map out where AI integration will deliver the highest return on investment. By understanding your unique tech stack and goals, we ensure we design a solution that aligns perfectly with your operations."
+    },
+    "2": {
+      title: "Phase 02: Plan",
+      body: "We engineer a blueprint for your custom AI architecture. This phase includes mapping data pipelines, selecting cognitive models, and designing secure, zero-UI ambient integrations. We define clear delivery milestones, data security boundaries, and success metrics. Our plans are modular, allowing you to deploy fast and scale reliably."
+    },
+    "3": {
+      title: "Phase 03: Build",
+      body: "Our engineering team brings the blueprint to life. We construct your cognitive AI safety agents, integrate them into your existing CRMs and workflows, and build secure backend systems. We write clean, resilient, and enterprise-grade code that is fully tested and optimized. Deployment typically occurs within 1 to 2 weeks."
+    },
+    "4": {
+      title: "Phase 04: Scale",
+      body: "We continually monitor, protect, and optimize your deployed AI systems. Our scaling phase focuses on eliminating human error, enhancing response speeds, and managing data pipelines as your traffic grows. We provide ongoing support and updates to ensure your automation keeps delivering maximum operational velocity."
+    }
+  };
+
+  if (approachRows.length && approachModal && closeApproachModal && modalTitle && modalBody) {
+    approachRows.forEach(row => {
+      row.addEventListener('click', () => {
+        const stepNum = row.getAttribute('data-step');
+        const details = stepDetails[stepNum];
+        if (details) {
+          modalTitle.textContent = details.title;
+          modalBody.textContent = details.body;
+          approachModal.classList.add('active');
+          document.body.style.overflow = 'hidden';
+        }
+      });
+    });
+
+    const hideApproachModal = () => {
+      approachModal.classList.remove('active');
+      document.body.style.overflow = '';
+    };
+
+    closeApproachModal.addEventListener('click', hideApproachModal);
+
+    approachModal.addEventListener('click', (e) => {
+      if (e.target === approachModal) {
+        hideApproachModal();
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && approachModal.classList.contains('active')) {
+        hideApproachModal();
+      }
+    });
+  }
+});
+
 

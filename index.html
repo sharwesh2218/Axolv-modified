@@ -44,7 +44,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:wght@400;500;700&display=swap">
 
   <!-- Styling -->
-  <link rel="stylesheet" href="style.css?v=138">
+  <link rel="stylesheet" href="style.css?v=139">
 </head>
 <body>
 
@@ -1125,38 +1125,65 @@
 
   <section class="approach-section" id="approach">
     <div class="container">
-      <!-- New Container Row for Approach Heading -->
-      <div class="approach-title-row" style="width: 100%; text-align: left; padding-bottom: 30px;">
-        <h2 class="heading-left-premium">Our Approach</h2>
+      <div class="approach-title-row" style="width: 100%; text-align: left; padding-bottom: 50px;">
+        <span class="section-label">/OUR APPROACH</span>
       </div>
 
-      <div class="approach-grid">
-        <!-- Step 1: Discover & Audit -->
-        <div class="approach-card animate-fade-up">
-          <span class="approach-num">01</span>
-          <h3 class="approach-title">Discover & Audit</h3>
-          <p class="approach-desc">We deeply analyze your manual workflows and identify repetitive tasks that cause operational overhead.</p>
+      <div class="approach-flow">
+        <!-- Step 1: Discover -->
+        <div class="approach-flow-row animate-fade-up" data-step="1">
+          <div class="approach-flow-visual">
+            <span class="approach-flow-num">/01</span>
+            <div class="approach-flow-img-wrap">
+              <img src="magnifying_glass_3d.png" alt="Discover 3D Icon" class="approach-3d-img">
+            </div>
+          </div>
+          <div class="approach-flow-content">
+            <h3 class="approach-flow-title">Discover</h3>
+            <p class="approach-flow-desc">We start by digging deep, understanding your goals, audience, and challenges. This is where insights surface and opportunities take shape.</p>
+          </div>
         </div>
 
-        <!-- Step 2: Architect & Design -->
-        <div class="approach-card animate-fade-up delay-1">
-          <span class="approach-num">02</span>
-          <h3 class="approach-title">Architect & Design</h3>
-          <p class="approach-desc">We blueprint custom AI safety agents and zero-UI ambient architectures tailored to your specific infrastructure.</p>
+        <!-- Step 2: Plan -->
+        <div class="approach-flow-row animate-fade-up delay-1" data-step="2">
+          <div class="approach-flow-visual">
+            <span class="approach-flow-num">/02</span>
+            <div class="approach-flow-img-wrap">
+              <img src="calendar_3d.png" alt="Plan 3D Icon" class="approach-3d-img">
+            </div>
+          </div>
+          <div class="approach-flow-content">
+            <h3 class="approach-flow-title">Plan</h3>
+            <p class="approach-flow-desc">Next we map out a clear strategy, aligning AI solutions with your vision. Every step is designed to solve real problems and unlock growth.</p>
+          </div>
         </div>
 
-        <!-- Step 3: Build & Deploy -->
-        <div class="approach-card animate-fade-up delay-2">
-          <span class="approach-num">03</span>
-          <h3 class="approach-title">Build & Deploy</h3>
-          <p class="approach-desc">We seamlessly engineer and deploy your cognitive AI agents and backend platforms within 1 to 2 weeks.</p>
+        <!-- Step 3: Build -->
+        <div class="approach-flow-row animate-fade-up delay-2" data-step="3">
+          <div class="approach-flow-visual">
+            <span class="approach-flow-num">/03</span>
+            <div class="approach-flow-img-wrap">
+              <img src="code_window_3d.png" alt="Build 3D Icon" class="approach-3d-img">
+            </div>
+          </div>
+          <div class="approach-flow-content">
+            <h3 class="approach-flow-title">Build</h3>
+            <p class="approach-flow-desc">Then we bring ideas to life, developing custom AI agents and automations. Each solution is crafted to fit seamlessly into your workflow.</p>
+          </div>
         </div>
 
-        <!-- Step 4: Scale & Optimize -->
-        <div class="approach-card animate-fade-up delay-3">
-          <span class="approach-num">04</span>
-          <h3 class="approach-title">Scale & Optimize</h3>
-          <p class="approach-desc">We continuously monitor surveillance and data pipelines to eliminate up to 80% of human error and maximize efficiency.</p>
+        <!-- Step 4: Scale -->
+        <div class="approach-flow-row animate-fade-up delay-3" data-step="4">
+          <div class="approach-flow-visual">
+            <span class="approach-flow-num">/04</span>
+            <div class="approach-flow-img-wrap">
+              <img src="cursor_3d.png" alt="Scale 3D Icon" class="approach-3d-img">
+            </div>
+          </div>
+          <div class="approach-flow-content">
+            <h3 class="approach-flow-title">Scale</h3>
+            <p class="approach-flow-desc">Finally we refine and expand, tracking results, improving performance, and scaling your AI systems as your business grows.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -1662,6 +1689,19 @@
     </div>
   </div>
 
-<script src="app.js?v=138"></script>
+  <!-- ===== APPROACH MODAL OVERLAY ===== -->
+  <div class="about-modal-overlay" id="approachModal">
+    <div class="about-modal-content">
+      <button class="about-modal-close" id="closeApproachModal" aria-label="Close modal">×</button>
+      <div class="about-modal-header">
+        <h2 id="approachModalTitle">Discover</h2>
+      </div>
+      <div class="about-modal-body">
+        <p id="approachModalBody">...</p>
+      </div>
+    </div>
+  </div>
+
+<script src="app.js?v=139"></script>
 </body>
 </html>

@@ -5610,7 +5610,8 @@ a.contact-info-val:hover {
   .social-icon:active,
   .nav-links a:active,
   .case-study-trigger-btn:active,
-  .about-modal-close:active {
+  .about-modal-close:active,
+  .approach-flow-row:active {
     transform: scale(0.96) !important;
     transition: transform 0.12s cubic-bezier(0.25, 1, 0.5, 1) !important;
   }
@@ -5619,7 +5620,8 @@ a.contact-info-val:hover {
   .service-card:hover,
   .testimonial-grid-card:hover,
   .team-card-new:hover,
-  .contact-info-box:hover {
+  .contact-info-box:hover,
+  .approach-flow-row:hover {
     transform: none !important;
     box-shadow: none !important;
     border-color: var(--border-glass) !important;
@@ -5689,5 +5691,135 @@ a.contact-info-val:hover {
     width: 100%;
     display: block;
     text-align: center;
+  }
+}
+
+/* ==========================================================================
+   APPROACH SECTION VERTICAL FLOW (EXACT VIDEO STYLE)
+   ========================================================================== */
+.approach-section {
+  padding: 90px 0;
+  background: #ffffff !important; /* White background as shown in the video */
+  border-top: none !important;
+  border-bottom: none !important;
+}
+
+.approach-section .section-label {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: #172212;
+  letter-spacing: 0.15em;
+  font-weight: 700;
+}
+
+.approach-flow {
+  display: flex;
+  flex-direction: column;
+  gap: 80px; /* Space between steps */
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.approach-flow-row {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.approach-flow-row:hover {
+  transform: translateX(10px); /* Subtle shift to show interactiveness */
+}
+
+.approach-flow-visual {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  width: 320px;
+  flex-shrink: 0;
+}
+
+.approach-flow-num {
+  font-family: var(--font-mono);
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: #d1d1d1;
+}
+
+.approach-flow-img-wrap {
+  width: 140px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.approach-3d-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 15px 25px rgba(127, 255, 0, 0.12));
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.approach-flow-row:hover .approach-3d-img {
+  transform: translateY(-8px) rotate(4deg) scale(1.05);
+}
+
+.approach-flow-content {
+  flex-grow: 1;
+}
+
+.approach-flow-title {
+  font-family: var(--font-titles);
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #172212;
+  margin-bottom: 12px;
+  letter-spacing: -0.03em;
+}
+
+.approach-flow-desc {
+  font-size: 1.15rem;
+  line-height: 1.65;
+  color: #44503f;
+}
+
+/* Mobile responsive version for Approach Flow */
+@media (max-width: 768px) {
+  .approach-section {
+    padding: 60px 0;
+  }
+  .approach-flow {
+    gap: 50px;
+  }
+  .approach-flow-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .approach-flow-row:hover {
+    transform: none; /* Disable shift on mobile */
+  }
+  .approach-flow-visual {
+    width: 100%;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .approach-flow-num {
+    font-size: 1.8rem;
+  }
+  .approach-flow-img-wrap {
+    width: 90px;
+    height: 90px;
+  }
+  .approach-flow-title {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+  }
+  .approach-flow-desc {
+    font-size: 1.05rem;
+    line-height: 1.6;
   }
 }
